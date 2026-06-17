@@ -10,6 +10,13 @@ This repository contains a CLI-based multi-client chat system implemented in C++
 - **Chat History (`/history`):** Retrieve the last `n` messages.
 - **Status Updates (`/status`):** Set status to `online`, `away`, or `busy`.
 
+  <img width="1920" height="1080" alt="Screenshot (1173)" src="https://github.com/user-attachments/assets/dd96fcb4-9fce-43af-bf14-9c34967429b8" />
+
+  <img width="1920" height="1080" alt="Screenshot (1174)" src="https://github.com/user-attachments/assets/95c0263e-2e1c-43d9-8409-354d71b3dcef" />
+  
+
+
+
 ## Prerequisites
 Since this is a Linux-based CLI application, Windows users must run it using **WSL (Windows Subsystem for Linux)**.
 
@@ -38,6 +45,9 @@ g++ client.cpp -o client -pthread
 ```
 *(Note: `-pthread` is required if multi-threading is used in the implementation).*
 
+<img width="1920" height="1080" alt="Screenshot (1175) - Copy" src="https://github.com/user-attachments/assets/bf0cbb99-de4e-4750-97b8-465c1b57c18a" />
+
+
 ### 2. Run the Server
 **The server must be started first!** Open a terminal, navigate to the version folder, and run:
 ```bash
@@ -53,6 +63,10 @@ Open a new WSL terminal (or multiple terminals for multiple clients) and run:
 1. Enter the Server IP (Default is `127.0.0.1` for localhost).
 2. Enter your credentials (e.g., Demo users: `zubair`, `ali`, `ahmed`, `daniyal`).
 3. Type `/help` to see the list of available commands.
+
+
+<img width="1920" height="1080" alt="Screenshot (1176)" src="https://github.com/user-attachments/assets/0b968fe4-727f-44f7-b001-d8abea7c193b" />
+
 
 ## Available Client Commands
 | Command | Format | Description |
@@ -107,4 +121,7 @@ Here is the exact data layout for the different components in the project reposi
 | `UDP-version/client.cpp` | Source Code | Pure UDP client implementation utilizing non-blocking polling and `sendto`/`recvfrom`. |
 | `Report.docx` | Documentation | Detailed project report containing screenshots and the operational flow logic. |
 | `Assignment 2...pdf` | Documentation | Initial assignment document defining the socket rules and application constraints. |
+
+<img width="1920" height="1080" alt="Screenshot (1177)" src="https://github.com/user-attachments/assets/ed82019a-bbfa-4a74-8915-07e4a35851ac" />
+
 
